@@ -1,7 +1,7 @@
 import React from 'react'
-import {HiBriefcase} from 'react-icons/hi'
-import {GiGraduateCap} from 'react-icons/gi'
-import {SlGraduation} from 'react-icons/sl'
+// import {HiBriefcase} from 'react-icons/hi'
+// import {GiGraduateCap} from 'react-icons/gi'
+// import {SlGraduation} from 'react-icons/sl'
 import ME from './Assests/myPic.jpg'
 import pp from './Assests/pp.jpeg'
 
