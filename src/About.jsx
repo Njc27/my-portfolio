@@ -3,7 +3,7 @@ import React from 'react'
 // import {GiGraduateCap} from 'react-icons/gi'
 // import {SlGraduation} from 'react-icons/sl'
 import ME from './Assests/myPic.jpg'
-import pp from './Assests/pp.jpeg'
+// import pp from './Assests/pp.jpeg'
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
     <div className='about'>
     <div className='aboutMe'>
     <div className='my-pic'>
-    <img className='img-1' src={ME} alt="my-image"/>
+    <img className='img-1' src={ME} alt="my-pic"/>
 
     </div>
     <div className='about-desc'>

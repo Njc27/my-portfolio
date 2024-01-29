@@ -9,12 +9,12 @@ const Work = () => {
   const [stay,setStay] = useState(false);
 
 
- const onMouseLeave=(str)=>{
-    setWorkDesc('')
-  }
+//  const onMouseLeave=(str)=>{
+//     setWorkDesc('')
+//   }
 
   const changeWorkDesc = (str) =>{
-    if(stay != true){
+    if(stay !== true){
       setWorkDesc('')
     }
   }
@@ -67,11 +67,11 @@ const Work = () => {
           <ul className='intern-work'>
           <li>
           Reboot Democracy Website
-          <a href = "https://rebootdemocracy.ai/" className='btn btn-primary' target="_blank">Live Demo</a>
+          <a href = "https://rebootdemocracy.ai/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </li>
           <li>
           Power at Work
-          <a href = "https://poweratwork.us/" className='btn btn-primary' target="_blank">Live Demo</a>
+          <a href = "https://poweratwork.us/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </li>
           </ul>
           </li>
