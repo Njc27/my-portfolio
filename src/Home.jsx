@@ -30,7 +30,7 @@ const Home = () => {
     <>
     <div className='portfolio'>
     <div className='header-content'>
-        <h1>Namitha Jajur Chandrashekhar</h1>
+        <h1>Namitha JC</h1>
         <h5>Software Developer</h5>
     </div>
 
