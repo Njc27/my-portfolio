@@ -23,8 +23,8 @@ const Contact = () => {
     return (
     <section id='contact'>
     
-      <div className='container contact_container'>
-        <div className='contact_options'>
+      <div className='contact_container'>
+        {/* <div className='contact_options'>
           <article className='contact_option'>
           <BiMessageDetail className='contact_option-icon'/>
             <h4>Email</h4>
@@ -45,7 +45,7 @@ const Contact = () => {
             <h5>Njc27</h5>
             <a href='https://github.com/Njc27'>Send a message</a>
           </article>
-        </div>
+        </div> */}
         {/*END OF CONTACT OPTIONS*/}
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' className='form-input' required/>

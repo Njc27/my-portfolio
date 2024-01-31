@@ -1,9 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Encode+Sans+Semi+Expanded&family=Josefin+Slab&family=Lato&family=Poppins&family=Roboto&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Encode+Sans+Semi+Expanded&family=Josefin+Slab&family=Lato&family=Poppins&family=Roboto+Slab&family=Russo+One&display=swap');
+
+.background-theme{
+    z-index: -99;
+  }
+
+  .connect-icons{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2.8rem;
+    justify-content: center;
+}
+
+.connect-icons .icons{
+    color: #E2DCC8;
+    font-size: 1.5rem;
+}
 
 /* Home Styles */
 
 .header-content {
-    margin:5rem 0rem 5rem 0rem;
+    /* position: relative; */
+    padding: 5rem;
+    /* z-index: 1; */
   }
 
   .header-content h1{
@@ -12,6 +30,7 @@
   }
 
   .header-content h5{
+    font-family: 'Lato', serif;
     color:#F0DECB;
   }
 
@@ -41,7 +60,9 @@
   }
 
   .home-nav ul li {
+    cursor: pointer;
     border: 5px solid;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color:#c8a8a8;
@@ -81,7 +102,10 @@
 }
 
 .about-desc{
-    margin:1.5rem 2rem 0rem 0rem;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Josefin Slab', serif;
+    margin: -2rem 2rem 0rem 2rem;
     text-align: justify;
     font-size: 18px;
     color: #FFE9D6;
@@ -173,9 +197,9 @@
 /* Contact Styles */
 
 .contact_container{
-    width:58%;
+    width:80%;
     display: grid;
-    grid-template-columns: 25% 50%;
+    /* grid-template-columns: 25% 50%; */
     gap: 10%;
 }
 
@@ -195,11 +219,15 @@
 }
 
 .contact_option h4{
+    font-family: 'Roboto Slab',serif;
     font-size: 0.75rem;
     color: #FFE9D6;
 }
 
 .contact_option h5{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Josefin Slab',serif;
     font-size: 0.95rem;
     color: #FFE9D6;
 }
@@ -217,6 +245,7 @@
 }
 
 .contact_option a{
+    font-family: 'Josefin Slab',serif;
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
@@ -228,13 +257,13 @@
     text-decoration: underline;
 }
 
-form{
+.contact_container form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-input, textarea{
+.contact_container input, textarea{
     width:100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -293,28 +322,35 @@ input, textarea{
 }
 
 .work-card h4{
+    font-family: 'Roboto Slab',serif;
     font-size: 0.95rem;
     color: #FFE9D6;
 }
 
 .work-card h3{
+    font-family: 'Josefin Slab',serif;
     font-size: 0.85rem;
     color: #FFE9D6;
 }
 
 .work-card h5{
+    font-family: 'Josefin Slab',serif;
     font-size: 0.75rem;
     color: #FFE9D6;
 }
 
 .work-card small{
+    font-family: 'Josefin Slab',serif;
     font-size: 0.7rem;
     color: #FFE9D6;
 }
 
 .work-desc{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Josefin Slab',serif;
     color: white;
-    margin: 4rem 10rem;
+    margin: 2rem 10rem;
 }
 
 /* .work-desc ul{
@@ -339,6 +375,7 @@ input, textarea{
 }
 
 .intern-work a{
+    font-family: 'Josefin Slab',serif;
     text-decoration: none;
     margin-left: 1rem;
     background-color: #B42B51;
@@ -397,6 +434,7 @@ input, textarea{
 }
 
 .project_item h3{
+    font-family: 'Roboto Slab', serif;
     margin: 1.2rem 0 2rem;
     height: 40px;
 }
@@ -408,6 +446,7 @@ input, textarea{
 }
 
 .project_item-cta a{
+    font-family: 'Josefin Slab',serif;
     text-decoration: none;
     margin-left: 1rem;
     background-color: #972a49;
@@ -451,6 +490,7 @@ input, textarea{
 }
 
 .skills_container > div h3{
+    font-family: 'Josefin Slab',serif;
     font-size: 1rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -458,6 +498,7 @@ input, textarea{
 }
 
 .skills_details h4 {
+    font-family: 'Roboto Slab',serif;
     font-size: 0.75rem;
     color:#FFE9D6;
 }

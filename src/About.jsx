@@ -2,6 +2,10 @@ import React from 'react'
 // import {HiBriefcase} from 'react-icons/hi'
 // import {GiGraduateCap} from 'react-icons/gi'
 // import {SlGraduation} from 'react-icons/sl'
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
+import Resume from './Assests/JajurChandrashekhar.Namitha.pdf'
 import ME from './Assests/myPic.jpg'
 // import pp from './Assests/pp.jpeg'
 
@@ -12,6 +16,12 @@ const About = () => {
     <div className='aboutMe'>
     <div className='my-pic'>
     <img className='img-1' src={ME} alt="my-pic"/>
+    <div className='connect-icons'>
+    <a href='https://www.linkedin.com/in/namitha-jc-9b478416b/'><FaLinkedin className='icons'/></a>
+    <a href='https://github.com/Njc27'><FaGithub className='icons' /></a>
+    <a href={Resume} download ><IoDocumentText className='icons' /></a>
+    
+    </div>
 
     </div>
     <div className='about-desc'>
