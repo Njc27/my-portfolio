@@ -328,6 +328,7 @@
 }
 
 .work-card h3{
+    font-weight: 700;
     font-family: 'Josefin Slab',serif;
     font-size: 0.85rem;
     color: #FFE9D6;
