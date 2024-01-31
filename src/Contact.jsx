@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import {BiMessageDetail} from 'react-icons/bi'
+// import {BiMessageDetail} from 'react-icons/bi'
 import emailjs from 'emailjs-com'
 import './style.css'
 
