@@ -30,7 +30,7 @@ const About = () => {
     <span className='text-highlight'> Northeastern University</span>, am a proficient <span className='text-highlight'>Full Stack Software Engineer</span>. Skilled in debugging, 
     optimization, and test automation, I thrive in collaborative settings, backed by strong 
     communication abilities. My academic focus includes web design, web development using Spring Boot, UI/UX, and database systems. 
-    Professionally, I'm contributing as a Full-time Web Developer Co-op, a role that evolved from my previous position as a part-time web developer intern and a 
+    Professionally, I'm contributing as a Full-time Web Developer Co-op, a role that evolved from my previous position as a part-time web developer intern at The Burnes Center and a 
     Software Developer at Infosys, contracted with Pfizer Technologies. My expertise spans 
     frontend and backend technologies, database management, and design tools.
     </p>
