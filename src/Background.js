@@ -52,6 +52,9 @@ const Background = () => {
                 //     },
                 // },
                 particles: {
+                    color: {
+                        value: "#803D3B",
+                    },
 	        number: {
 	            value: 80,
 	            density: {
@@ -61,7 +64,8 @@ const Background = () => {
 	        },
 	        line_linked: {
 	            enable: true,
-	            opacity: 0.3
+	            opacity: 0.3,
+                color:"#ADC4CE"
 	        },
 	        move: {
 	            direction: "down",

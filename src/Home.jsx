@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './About';
 import Work from './Work';
@@ -7,62 +6,53 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
 import './style.css'
+import Resume from './Assests/JajurChandrashekhar.Namitha.pdf'
+import ME from './Assests/myPic.jpg'
+import linkedin from './Assests/linkedin.png'
+import github from './Assests/github.png'
+import resume from './Assests/resume.png'
+import contact from './Assests/contact-us.png'
 
 
 const Home = () => {
-
-    const data =[
-        {menu:"About Me", comp:<About/>},
-        {menu:"My Work", comp:<Work/>},
-        {menu:"Projects", comp:<Projects/>},
-        {menu:"My Skills", comp:<Skills/>},
-        {menu:"Contact Me", comp:<Contact/>}
-        
-    ]
-
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex) => {
-      setIndex(selectedIndex);
-    };
-
   return (
-    <>
+    <header>
+    <div className='container home_container'>
     <div className='portfolio'>
-    <div className='header-content'>
-        <h1>NAMITHA JC</h1>
-        <h5>Software Developer</h5>
-    </div>
-    </div>
-
-        <div className='home'>
-            <div className='home-nav'>
-                <ul>
-                   {data?.map(elem =>(
-                    <div onClick={()=>setIndex(data.indexOf(elem))}>
-
-                    <li className={index === data.indexOf(elem)?'active-li':''}>
-                        {elem?.menu}
-                    </li>
-                    </div>
-                   ))}
-                </ul>
-            </div>
-
-            <div>
-        <Carousel activeIndex={index} onSelect={handleSelect} controls = {false} indicators	= {false} class="carousel" data-interval="false" interval={null}>
-        {data.map(elem =>(
-        <Carousel.Item>
-        <div className='component-type'>
-            <div>{elem.comp}</div>
+        <div className='header-content'>
+            <h5>Hello, I'm</h5>
+            <h1>NAMITHA JC</h1>
         </div>
-        </Carousel.Item>
-        ))}
-    </Carousel>
-    </div>
-    </div>
     
-            </>
+    </div>
+
+    <div className='home'>
+        <div className='intro'>
+            <p>
+            As an adept Full Stack Software Engineer actively advancing my Master of Science at 
+            Northeastern University, I specialize in debugging, optimization, and test automation. 
+            With a knack for crafting code and scripts, I'm dedicated to tackling intricate problems with fervor. 
+            My passion for innovation drives me to explore the latest in computer science, ensuring our 
+            collaboration yields cutting-edge solutions. 
+            Let's unite to transform your software aspirations into reality!
+            </p>
+
+            <div className='connect-icons'>
+                <a href='https://www.linkedin.com/in/namitha-jc-9b478416b/'><img src={linkedin} alt="linkedin" className='icons'/> <p>LinkedIn</p> </a>
+                <a href='https://github.com/Njc27'><img src={github} alt="github" className='icons'/> <p>Github</p></a>
+                <a href={Resume} download ><img src={resume} alt="resume" className='icons'/> <p>Resume</p></a>
+                <a href='./Contact'><img src={contact} alt="contact" className='icons'/> <p>Contact</p></a>  
+            </div>
+        </div>
+
+        <div className='aboutme'>
+          <div className='about_me-image'>
+            <img src={ME} alt="about image"/>
+          </div>
+        </div>
+    </div>
+    </div>
+    </header>
   )
 }
 export default Home
