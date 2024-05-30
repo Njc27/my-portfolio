@@ -1,10 +1,5 @@
 import React,{useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import About from './About';
-import Work from './Work';
-import Projects from './Projects';
-import Skills from './Skills';
-import Contact from './Contact';
 import './style.css'
 import Resume from './Assests/JajurChandrashekhar.Namitha.pdf'
 import ME from './Assests/myPic.jpg'

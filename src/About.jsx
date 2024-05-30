@@ -2,8 +2,6 @@ import React from 'react'
 import {HiBriefcase} from 'react-icons/hi'
 import {GiGraduateCap} from 'react-icons/gi'
 import {SlGraduation} from 'react-icons/sl'
-import infosys from './Assests/infosys.jpeg'
-import burnes from './Assests/the_burnes.jpeg'
 import './style.css'
 
 const About = () => {
@@ -18,7 +16,6 @@ const About = () => {
               <h3>Work experience</h3>
               <div className='category-cards'>
               <article className='about_crd'>
-              {/* <img className='comp-logo' src={burnes} alt='The Burnes Center for Social Change logo' /> */}
                 <HiBriefcase className='about_icon'/>
                 <h5>The Burnes Center for Social Change</h5>
                 <b><small>Web Developer Intern</small></b><br></br>
@@ -27,7 +24,6 @@ const About = () => {
               </article>
 
               <article className='about_crd'>
-                {/* <img className='comp-logo' src={infosys} alt='infosys logo' /> */}
                 <HiBriefcase className='about_icon'/>
                 <h5>Infosys</h5>
                 <b><small>Software Engineer</small></b><br></br>

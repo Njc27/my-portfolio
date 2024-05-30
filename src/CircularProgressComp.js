@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from "react";
+import React from "react";
 import CircularProgress from '@mui/joy/CircularProgress';
 import { useCountUp } from 'use-count-up';
 

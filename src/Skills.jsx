@@ -1,31 +1,25 @@
-import React, { useState, useEffect,useRef }from 'react'
-import {BsCheck2All} from 'react-icons/bs'
+import React, {useRef }from 'react'
 import CircularProgressComp from "./CircularProgressComp";
-// import SubSection from './SubSection';
 
 
 
 const Skills = () => {
 
-  function Counter() {
-    const [counter, setCounter] = useState(0);
+  // function Counter() {
+  //   const [counter, setCounter] = useState(0);
   
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        if (counter >= 65) {
-          clearInterval(intervalId);
-        } else {
-          setCounter(prevCounter => prevCounter + 1);
-        }
-      }, 30);
+  //   useEffect(() => {
+  //     const intervalId = setInterval(() => {
+  //       if (counter >= 65) {
+  //         clearInterval(intervalId);
+  //       } else {
+  //         setCounter(prevCounter => prevCounter + 1);
+  //       }
+  //     }, 30);
   
-      return () => clearInterval(intervalId); // Cleanup interval on component unmount
-    }, [counter]); // Only re-run the effect if counter changes
-  
-    // return (
-    //   <div id="number">{counter}%</div>
-    // );
-  }
+  //     return () => clearInterval(intervalId); // Cleanup interval on component unmount
+  //   }, [counter]);
+  // }
 
   // const skillsData_frontend =[
   //   {skill:"React", percentage:"90%"},
@@ -33,11 +27,11 @@ const Skills = () => {
   //   {skill:"AngularJs", percentage:"75%"}
   // ]
 
-  const [skillsData_frontend, setSkills] = useState([
+  const skillsData_frontend = [
     { skill: "React", percentage: 90 },
     { skill: "Vue.js", percentage: 95 },
     { skill: "AngularJs", percentage: 75 }
-  ]);
+  ];
 
   // useEffect(() => {
   //   const intervalId = setInterval(() => {
@@ -80,7 +74,7 @@ const Skills = () => {
 
   /************************** */
   const ref1 = useRef(null);
-    const [reload,setReload] = useState(false);
+    const reload = false;
       // useEffect(() => {
       //   const observer = new IntersectionObserver(([entry]) =>
       //   setReload(!reload)
