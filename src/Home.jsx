@@ -33,7 +33,7 @@ const Home = () => {
             </p>
 
             <div className='connect-icons'>
-                <a href='https://www.linkedin.com/in/namitha-jc-9b478416b/'><img src={linkedin} alt="linkedin" className='icons'/> <p>LinkedIn</p> </a>
+                <a href='https://www.linkedin.com/in/namitha-j-c-9b478416b/'><img src={linkedin} alt="linkedin" className='icons'/> <p>LinkedIn</p> </a>
                 <a href='https://github.com/Njc27'><img src={github} alt="github" className='icons'/> <p>Github</p></a>
                 <a href={Resume} download ><img src={resume} alt="resume" className='icons'/> <p>Resume</p></a>
                 <a href='./Contact'><img src={contact} alt="contact" className='icons'/> <p>Contact</p></a>  

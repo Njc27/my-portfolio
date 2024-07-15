@@ -37,7 +37,7 @@ const Contact = () => {
           <BiMessageDetail className='contact_option-icon'/>
             <h4>LinkedIn</h4>
             <h5>Namitha JC</h5>
-            <a href='https://www.linkedin.com/in/namitha-jc-9b478416b/'>Send a message</a>
+            <a href='https://www.linkedin.com/in/namitha-j-c-9b478416b/'>Send a message</a>
           </article>
   
           <article className='contact_option'>
