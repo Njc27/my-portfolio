@@ -649,7 +649,7 @@ padding-right: 0.5rem;
     background: transparent;
     border: 2px solid #fdf5e6;
     resize: none;
-    color: #fdf5e6;
+    /* color: #fdf5e6; */
 }
 
 .send-msg{
