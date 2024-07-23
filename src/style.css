@@ -433,6 +433,26 @@ padding-right: 0.5rem;
     margin: 5rem;
   }
 
+  #projects p{
+    color:var(--color-light) ;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .burnes-projects-container{
+    /* height: 120vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* align-items: center; */
+    gap:2rem;
+    /* justify-content: center; */
+    margin: 5rem;
+  }
+
+  .project-description a{
+    color: #F67E7D;
+  }
+
   #projects h2{
     color:#803D3B
   }
@@ -454,8 +474,8 @@ padding-right: 0.5rem;
   }
 
   .project-details:hover{
-    border: 2px solid #fdf5e6;
-    background: transparent;
+    /* border: 2px solid #fdf5e6; */
+    background: #fffaf2;
 }
 
   .project-type{
@@ -470,7 +490,20 @@ padding-right: 0.5rem;
     height: 100px;
   }
 
-  .project-type a{
+  .link-button a{
+    text-decoration: none;
+    margin-left: 0.5rem;
+    background-color: #803D3B;
+    color: #FFF2D7;
+    border: #803D3B solid 1px;
+    border-radius: 10px;
+    padding: 7px;
+    width: 5rem;
+    height: 2rem;
+    font-size: 12px;
+}
+
+.project-type a{
     text-decoration: none;
     margin-left: 0.5rem;
     background-color: #803D3B;
@@ -517,7 +550,7 @@ padding-right: 0.5rem;
 }
 
 .project-description{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     color: #AF8260;
     text-align: left;

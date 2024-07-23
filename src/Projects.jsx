@@ -5,8 +5,57 @@ import img3 from "./Assests/img-3.webp"
 import img4 from "./Assests/3PointCinemas.png"
 import img5 from "./Assests/Paxy.png"
 import img6 from "./Assests/WellnessWallet.png"
+import img7 from "./Assests/innovate_us.svg"
+import img8 from "./Assests/the-govlab-logo.svg"
 
 const Projects = () => {
+
+  const burnes_data = [
+    {
+      title: "Innovate US",
+      project_pic: <img src={img7} />,
+      project_link: "https://innovate-us.org/",
+      techstack: ["Vue.js", "DirectUS", "GraphQL", "Node.js"],
+      project_desc: (
+        <span>
+          I developed websites for InnovateUS, an initiative by the Burnes Center for Social Change at Boston. InnovateUS offers free, flexible learning on data, digital, innovation, and AI skills for public service professionals. The main site,{" "}
+          <a href="https://innovate-us.org/course" target="_blank" rel="noopener noreferrer">Innovate Us</a>, provides access to self-paced courses, live workshops, and customized courses. Specific pages like Google Certificates - {" "}
+          <a href="https://innovate-us.org/google-certificates" target="_blank" rel="noopener noreferrer">Google Certificates</a>, Innovation Skills Accelerator - {" "}
+          <a href="https://innovate-us.org/course/innovation-skills-accelerator" target="_blank" rel="noopener noreferrer">Innovation Skills Accelerator</a>, and Maryland DoIT Partnership - {" "}
+          <a href="https://innovate-us.org/partner/marylanddoit" target="_blank" rel="noopener noreferrer">Maryland DoIT Partnership</a> highlight various programs. I ensured all websites met web accessibility standards, enhancing usability for all users.
+        </span>
+      )
+    },
+    
+    {
+      title: "Reboot Democracy",
+      project_pic: <img src={img8}/>,
+      project_link: "https://rebootdemocracy.ai/",
+      techstack: ["Vue.js", "DirectUS", "GraphQL", "Node.js"],
+      project_desc:(
+        <span>
+          I developed websites for the Reboot Democracy initiative, which uses AI to enhance participatory democracy. The main site, {" "}
+          <a href="(https://rebootdemocracy.ai/" target="_blank" rel="noopener noreferrer">Reboot Democracy</a>, showcases the mission to leverage AI for better governance, outcomes, and trust in institutions and communities. The - {" "}
+          <a href="https://rebootdemocracy.ai/our-research" target="_blank" rel="noopener noreferrer">Our Research</a>, section details research on effective democratic practices. These websites highlight the potential of generative AI to reimagine and scale democratic engagement.
+        </span>
+      )
+    },
+
+    {
+      title: "Power At Work",
+      project_pic: <img src={img1}/>,
+      project_link: "https://poweratwork.us/",
+      techstack: ["Vue.js", "DirectUS", "GraphQL", "Node.js"],
+      project_desc:(
+        <span>
+          I developed websites for the Power At Work initiative, promoting collective worker action in the U.S. The main site,  {" "}
+          <a href="(https://poweratwork.us/" target="_blank" rel="noopener noreferrer">Power At Work</a>, as a resource hub advocating for worker empowerment and self-determination. The - {" "}
+          <a href="https://poweratwork.us/theweeklydownload" target="_blank" rel="noopener noreferrer">The Weekly Download</a>, provides weekly updates on labor trends and worker movements, including {" "}
+          < a href = "https://poweratwork.us/theweeklydownload/issue-56" target="_blank" rel="noopener noreferrer">Issue 56</a>,which covers recent worker activism. These websites contribute to a broader discourse on workplace fairness and economic justice.
+        </span>
+      )
+    },
+  ]
 
   const project_data=[
     {
@@ -56,9 +105,6 @@ const Projects = () => {
     techstack:["Java","SpringBoot"],
     project_desc:"Developed an app to organize and access healthcare documents, ensuring easy storage and retrieval"
   },
-
-
-
   ]
 
   return (
@@ -66,13 +112,43 @@ const Projects = () => {
     <section id="projects">
     <h5>My recent work</h5>
     <h2>Projects</h2>
+
+    <p>WORK WEBSITES</p>
+      <div className='burnes-projects-container'>
+      {burnes_data.map(elem=>(
+      <div className='project-details'>
+        <div className='project-type'>
+          {/* <div className='project-img'>{elem.project_pic}</div> */}
+          {/* <div className='project_link'>{elem.project_link}</div> */}
+          
+        </div>
+        <div className='about-project'>
+          <h3>{elem.title}</h3>
+          <div className='tech-stack'>
+          {elem.techstack.map(tech=>(
+            <div className='techstack'>{tech}</div>
+          ))}
+          </div>
+          <div className='project-description'>
+            {elem.project_desc}
+          </div>
+          <div className='link-button'>
+          <a href={elem.project_link} className='btn' target="_blank" rel="norefferer">Link</a>
+          </div>
+        </div>
+        
+      </div>
+      ))}
+    </div>
+
+    <p>PERSONAL PROJECTS </p>
     <div className='projects-container'>
       {project_data.map(elem=>(
       <div className='project-details'>
         <div className='project-type'>
           <div className='project-img'>{elem.project_pic}</div>
           {/* <div className='project_link'>{elem.project_link}</div> */}
-          <a href={elem.project_link} className='btn' target="_blank" rel="norefferer">GitHub</a>
+          <a href={elem.project_link} className='btn' target="_blank" rel="norefferer">Link</a>
         </div>
         <div className='about-project'>
           <h3>{elem.title}</h3>
