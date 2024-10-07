@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
-import Resume from './Assests/NamithaJC_Resume.pdf'
+import Resume from './Assests/Resume.pdf'
 import ME from './Assests/myPic.jpg'
 import linkedin from './Assests/linkedin.png'
 import github from './Assests/github.png'
