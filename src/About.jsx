@@ -18,12 +18,13 @@ const About = () => {
               <article className='about_crd'>
                 <HiBriefcase className='about_icon'/>
                 <h5>The Burnes Center for Social Change</h5>
-                <b><small>Web Developer Intern</small></b><br></br>
+                <b><small>Web Developer</small></b><br></br>
                 <b><small>Aug 2023 - May 2024</small></b><br></br>
-                <small>Led the design and launch of InnovateUS pages at the Burnes Center, enhancing digital 
+                <small>Developed websites with interactivity, accessibility, and responsive design</small>
+{/*                 <small>Led the design and launch of InnovateUS pages at the Burnes Center, enhancing digital 
                   course marketing, developed a D3.js dashboard increasing engagement, helped launch a GPT-powered 
                   chatbot boosting page views, and improved deployment processes with DirectUs CMS, 
-                  Docker, and Netlify.</small>
+                  Docker, and Netlify.</small> */}
               </article>
 
               <article className='about_crd'>
@@ -31,12 +32,14 @@ const About = () => {
                 <h5>Infosys</h5>
                 <b><small>Software Engineer</small></b><br></br>
                 <b><small>Mar 2021 - Jun 2022</small></b><br></br>
-                <small> Led the development of a responsive compliance website at Pfizer Technologies, optimized SQL databases, 
+                <small>1.3 years of experience at Pfizer Technologies, contracted 
+                with Infosys as Software Developer</small>
+{/*                 <small> Led the development of a responsive compliance website at Pfizer Technologies, optimized SQL databases, 
                   reduced API response times with Microservice Architecture, managed CI/CD pipelines using Jenkins, 
-                  Kubernetes, AWS, and enhanced application security with OAuth protocols.</small>
+                  Kubernetes, AWS, and enhanced application security with OAuth protocols.</small> */}
               </article>
 
-                <article className='about_crd'>
+{/*                 <article className='about_crd'>
                 <HiBriefcase className='about_icon'/>
                 <h5>ESPL IT Tech</h5>
                 <b><small>Full Stack Software Engineer</small></b><br></br>
@@ -45,7 +48,7 @@ const About = () => {
                   Spring Boot and Angular, integrated Salesforce CRM, and implemented 
                   GitLab CI at ESPL Tech IT, achieving a reduction in 
                   machine downtime and a decrease in stockouts.</small>
-              </article>
+              </article> */}
                 
               </div>
             </div>
